@@ -200,10 +200,6 @@ export default {
       return this.chartOptions.donut.series[0].data.length > 0;
     },
     isTopChartVisible() {
-      console.log(
-        "this.chartOptions.topChart.series[0].data.length:",
-        this.chartOptions.topChart.series[0].data.length
-      );
       return this.chartOptions.topChart.series[0].data.length > 0;
     },
     ...mapGetters([
