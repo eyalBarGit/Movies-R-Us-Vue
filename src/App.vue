@@ -1,13 +1,7 @@
 <template>
   <div id="app flex column space-between">
     <div>
-      <!-- <transition
-        name="route-transition"
-        enter-active-class="animated slideInRight"
-      > -->
       <router-view />
-      <!-- </transition> -->
-
       <div class="footer">
         <Footer class="footer" v-if="!this.getRoute" />
       </div>
@@ -41,5 +35,4 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   height: 100%;
 }
-
 </style>

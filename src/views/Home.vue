@@ -1,9 +1,7 @@
 <template>
   <div @click="toggleSearch" class="home container margin-center">
     <div class="search-bar-section margin-center flex justify-center">
-      <transition-group name="search" class="animated fadeInRightBig">
-        <SearchBar key="1" />
-      </transition-group>
+      <SearchBar key="1" />
     </div>
   </div>
 </template>
@@ -45,5 +43,4 @@ export default {
     width: 100%;
   }
 }
-
 </style>
