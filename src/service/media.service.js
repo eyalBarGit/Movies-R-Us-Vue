@@ -1,5 +1,5 @@
 import Axios from 'axios'
-const BASE_URL = 'http://www.omdbapi.com/?apikey=8a19934f'
+const BASE_URL = 'https://www.omdbapi.com/?apikey=8a19934f'
 
 
 async function query(title) {
