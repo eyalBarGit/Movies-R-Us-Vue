@@ -8,7 +8,7 @@
           @input="onStartTyping"
           v-model="searchTitle"
           type="text"
-          placeholder="I'm looking for..."
+          placeholder="Enter a movie name..."
           ref="input"
         />
       </form>
