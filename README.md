@@ -1,19 +1,14 @@
-# liquidity
+# Movies-R-Us 
 
-## Project setup
-```
-npm install
-```
+## Created with Vue.js
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
 
-### Compiles and minifies for production
+### stack:
 ```
-npm run build
+Vue
+VueX
+Vue HighCharts
+Axios
+Scss
+OMDB-api
 ```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
