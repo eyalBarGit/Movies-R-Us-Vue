@@ -10,4 +10,5 @@ VueX
 Vue HighCharts
 Axios
 Scss
+OMDB-api
 ```
