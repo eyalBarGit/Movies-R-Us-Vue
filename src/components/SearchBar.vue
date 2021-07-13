@@ -8,10 +8,11 @@
           @input="onStartTyping"
           v-model="searchTitle"
           type="text"
-          placeholder="Enter a movie name..."
+          placeholder="Enter a movie name... "
           ref="input"
         />
       </form>
+
       <SearchResultsList
         :searchTitle="searchTitle"
         v-if="getNum"
@@ -44,9 +45,22 @@ export default {
       await this.query(this.searchTitle);
     },
     onStartTyping({ keyCode }) {
-      if (!this.searchTitle) this.clearList();
-      if (this.searchByLength < 3) return;
+      if (!this.searchTitle) {
+        this.$emit("disableWarning");
+        this.clearList();
+      }
+      if (this.searchByLength < 4) {
+        this.$emit("warning");
+        return;
+      }
+      if (this.searchByLength >= 3) {
+        this.$emit("disableWarning");
+      }
+      if (this.searchTitle.length === 0) {
+        this.$emit("disableWarning");
+      }
       if (keyCode === 8) return;
+
       this.debounce();
     },
     debounce: _.debounce(

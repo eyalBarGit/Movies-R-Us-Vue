@@ -18,13 +18,16 @@
       <h2>
         Search {{ capitalizeSearchType }}s by "{{ routeParamsSearchTitle }}"
       </h2>
-      <div class="filter-section flex align-center">
-        <p class="filter-label">select year</p>
-        <b-form-select
-          @change="onFilterYears(selectedYear)"
-          v-model="selectedYear"
-          :options="options"
-        ></b-form-select>
+      <div class="top-bar align-center flex space-between">
+        <div class="filter-section flex align-center">
+          <p class="filter-label">select year</p>
+          <b-form-select
+            @change="onFilterYears(selectedYear)"
+            v-model="selectedYear"
+            :options="options"
+          ></b-form-select>
+        </div>
+        <button class="graph-btn" @click="onCreateGraph">Create Graph</button>
       </div>
       <Spinner v-if="getPaginatedPage.Error"></Spinner>
 
@@ -59,7 +62,6 @@
           @paginate="getPage"
           class="pagination-bar flex"
         />
-        <button @click="onCreateGraph">Create Graph</button>
       </div>
     </div>
   </div>
@@ -286,6 +288,19 @@ export default {
         p.VuePagination__count {
           display: inline-block;
         }
+      }
+    }
+  }
+  .top-bar {
+    margin-bottom: 5px;
+    .graph-btn {
+      background-color: black;
+      border: none;
+      color: #fff;
+      padding: 10px;
+      cursor: pointer;
+      &:active {
+        transform: scale(0.9);
       }
     }
   }

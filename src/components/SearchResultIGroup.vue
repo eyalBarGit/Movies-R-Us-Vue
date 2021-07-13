@@ -18,7 +18,7 @@
         <p>{{ item.Title }}</p>
       </router-link>
     </div>
-    <p @click="goTo" class="show-all">ShowAll...</p>
+    <button @click="goTo" class="show-all">ShowAll...</button>
   </div>
 </template>
 
