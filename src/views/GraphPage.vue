@@ -212,12 +212,17 @@ export default {
 };
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
 .graph-page {
   padding: 20px;
   min-height: 88vh;
   margin-bottom: 5px;
   align-items: stretch;
+  .main-content {
+    h1 {
+      margin-bottom: 10px;
+    }
+  }
 }
 </style>
 
