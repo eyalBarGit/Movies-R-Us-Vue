@@ -49,11 +49,11 @@ export default {
         this.$emit("disableWarning");
         this.clearList();
       }
-      if (this.searchByLength < 3) {
+      if (this.searchByLength < 2) {
         this.$emit("warning");
         return;
       }
-      if (this.searchByLength >= 3) {
+      if (this.searchByLength >= 2) {
         this.$emit("disableWarning");
       }
       if (this.searchTitle.length === 0) {

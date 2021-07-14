@@ -4,7 +4,7 @@
       <SearchBar key="1" @warning="warning" @disableWarning="disableWarning" />
     </div>
     <div class="warning-letters flex justify-center">
-      <p v-if="isWarning">search starts after 3 letters</p>
+      <p v-if="isWarning">search starts after 2 letters</p>
     </div>
   </div>
 </template>
