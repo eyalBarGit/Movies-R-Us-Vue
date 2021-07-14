@@ -121,10 +121,6 @@ export default {
     this.onAddToVisitedPage();
     await this.sortByYear(this.getPaginatedPage);
     await this.onGetdetailedItems();
-    console.log(
-      "this.chartOptions.donut.series[0].data.length:",
-      this.chartOptions.donut.series[0].data.length
-    );
   },
 
   methods: {
